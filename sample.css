@@ -12,15 +12,20 @@ body {
 @media (max-width: 768px) {
     body {
         font-size: 14px;
-        padding: 0 10px; /* Add padding for mobile readability */
+        padding: 0 10px; 
     }
 }
 
 .main-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    flex: 1;
+    padding: 20px;
+}
+
+.content {
+    padding: 20px;
+    background-color: #000000;
+    margin: 20px auto;
+    max-width: 1200px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 header {
@@ -49,38 +54,19 @@ header a:hover {
 
 @media (max-width: 768px) {
     header {
-      flex-direction: column; /* Stack items vertically */
+      flex-direction: column; 
       align-items: center;
       padding: 15px;
     }
   
     header .menu {
-      flex-direction: column; /* Stack menu items */
+      flex-direction: column; 
       gap: 10px;
     }
   
     header a {
-      font-size: 0.9em; /* Adjust text size */
-    }
+      font-size: 0.9em; 
   }
-
-.content {
-    text-align: center;
-    padding: 20px;
-    width: 100%;
-}
-
-.content h1 {
-    font-family: 'Fugaz One', cursive;
-    margin-bottom: 10px;
-    font-weight: normal;
-}
-
-.content p {
-    margin: 0 0 20px;
-    color: #ffffff;
-    font-family: 'Poppins', sans-serif;
-    font-weight: bold;
 }
 
 .items {
@@ -98,18 +84,20 @@ header a:hover {
 }
 
 .header-row {
-    background-color: #ddd;
+    background-color: #000000;
     padding: 10px;
     font-weight: bold;
+    text-align: center;
 }
 
 .item-card {
-    background-color: #fff;
+    background-color: #000000;
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     align-items: center;
+    text-align: center;
 }
 
 .item-image {
