@@ -1,7 +1,7 @@
 body {
     margin: 0;
     font-family: 'Fugaz One', cursive;
-    background-color: #000000;
+    background-color: #3b2c1f;
     color: #ffffff;
     display: flex;
     flex-direction: column;
@@ -17,21 +17,21 @@ body {
 }
 
 .main-content {
-    padding: 20px;
+    padding: 10px;
     align-items: center;
 }
 
 .content {
-    padding: 20px;
-    background-color: #000000;
-    margin: 20px auto;
+    padding: 5px;
+    background-color: #3b2c1f;
+    margin: 5px auto;
     max-width: 1200px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
 
 header {
-    background-color: #563075;
+    background-color: #201102;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -48,7 +48,6 @@ header a {
     text-decoration: none;
     margin: 0 15px;
 }
-
 
 header a:hover {
     color: #ffffff;
@@ -76,36 +75,62 @@ header a:hover {
     flex-direction: column;
     gap: 10px;
     padding: 20px;
+    width: calc(100% - 100px); 
+    margin: 0 20px; 
 }
 
 .header-row, .item-card {
     display: grid;
     grid-template-columns: repeat(6, 1fr);
     gap: 10px;
-    width: 100%;
+    width: 100%; 
 }
 
 .header-row {
-    background-color: #000000;
+    background-color: #2c1905;
     padding: 10px;
+    height: 35px; 
+    line-height: 7px; 
     font-weight: bold;
     text-align: center;
+    border: 3px solid #000000; 
+    border-radius: 5px;
+}
+
+.header-row p {
+    border-right: 3px solid #000000; 
+    
+}
+
+.header-row p:last-child {
+    border-right: none; 
 }
 
 .item-card {
-    background-color: #000000;
+    background-color: #352518;
     padding: 10px;
-    border: 1px solid #ddd;
+    border: 3px solid #1a0d01;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     align-items: center;
     text-align: center;
 }
 
+.item-card p {
+    border-right: 3px solid #201102; 
+    
+}
+
+.item-card p:last-child {
+    border-right: none; 
+}
+
 .item-image {
     grid-column: 1 / 2;
     width: 100%;
     height: auto;
+    border-right: 3px solid #201102;
+    align-items: center;
 }
 
 .item-id,
@@ -120,7 +145,7 @@ header a:hover {
 
 footer {
     font-family: 'Poppins', sans-serif;
-    background-color: #563075;
+    background-color: #201102;
     text-align: center;
     padding: 10px;
     color: #ffffff;
