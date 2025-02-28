@@ -6,14 +6,15 @@ body {
     color: #ffffff;
     text-align: center;
     font-size: 1rem;
+    display: flex;
     flex-direction: column;
 }
 
 @media (max-width: 768px) {
     body {
-      font-size: 14px;
+        font-size: 14px;
     }
-  }
+}
 
 header {
     background-color: #201102;
@@ -24,6 +25,8 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 1;
+    width: 100%; /* Stretch header to the sides */
+    position: relative; /* Position relative to the body */
 }
 
 header a {
@@ -38,24 +41,25 @@ header a:hover {
 
 @media (max-width: 768px) {
     header {
-      flex-direction: column; 
-      align-items: center;
-      padding: 15px;
+        flex-direction: column; 
+        align-items: center;
+        padding: 15px;
     }
-  
+
     header .menu {
-      flex-direction: column; 
-      gap: 10px;
+        flex-direction: column; 
+        gap: 10px;
     }
-  
+
     header a {
-      font-size: 0.9em; 
+        font-size: 0.9em; 
     }
-  }
+}
 
 .container {
     margin: 5px auto;
     max-width: 800px;
+    text-align: center; /* Center the container content */
 }
 
 .logo {
@@ -76,29 +80,38 @@ h2 {
 
 .buttons-block {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 65px; 
-    row-gap: 10px; 
-    padding-left: 2rem;
+    grid-template-columns: repeat(4, 1fr); /* Change to 3 columns for better fit */
+    column-gap: 15px; /* Adjust gap for smaller buttons */
+    row-gap: 20px; 
+    justify-content: center; /* Center the grid */
+    padding-left: 4rem;
     padding-right: 2rem;
+    margin: 0 auto; /* Center the buttons block */
 }
-
 
 .category-btn {
     background-color: #ffffff; 
     color: #201102; 
-    padding: 12px;
+    padding: 10px;
     border: 4px solid #201102; 
-    border-radius: 15px;
-    font-size: 1.1em;
+    border-radius: 40px; /* Rounder buttons but not fully circular */
+    font-size: 0.8em; /* Slightly smaller font size */
     font-weight: normal;
     cursor: pointer;
     transition: background-color 0.3s;
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 15px;
+    gap: 5px;
+    width: 95px; /* Smaller fixed width for consistent size */
+    height: 95px; /* Smaller fixed height for consistent size */
     text-decoration: none;
+    flex-direction: column;
+}
+
+.category-btn img {
+    width: 30px; /* Adjust icon size */
+    height: 30px; /* Adjust icon size */
 }
 
 .category-btn:hover {
@@ -106,12 +119,12 @@ h2 {
     color: #ffffff; 
 }
 
-.special-gap {
-    margin-bottom: 22px; 
-}
-
 main {
     flex: 1;
+    display: flex;
+    justify-content: center; /* Center main content */
+    align-items: center;
+    flex-direction: column;
 }
 
 footer {
