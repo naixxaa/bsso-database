@@ -133,8 +133,8 @@ header a:hover {
     align-items: center;
 }
 
-.item-id,
 .item-name,
+.item-location,
 .item-price,
 .item-level,
 .item-reputation {
