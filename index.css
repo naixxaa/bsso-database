@@ -18,7 +18,7 @@ body {
 
 header {
     background-color: #201102;
-    padding: 10px;
+    padding: 10px 7px;
     color: #ffffff;
     font-size: 20px;
     display: flex;
@@ -26,7 +26,7 @@ header {
     align-items: center;
     z-index: 1;
     width: 100%; /* Stretch header to the sides */
-    position: relative; /* Position relative to the body */
+    
 }
 
 header a {
@@ -98,7 +98,7 @@ h2 {
     font-size: 0.8em; /* Slightly smaller font size */
     font-weight: normal;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, color 0.3s; /* Transition for background and text color */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,16 +107,111 @@ h2 {
     height: 95px; /* Smaller fixed height for consistent size */
     text-decoration: none;
     flex-direction: column;
+    position: relative;
 }
 
 .category-btn img {
-    width: 30px; /* Adjust icon size */
-    height: 30px; /* Adjust icon size */
+    max-width: 70%; /* Auto size the image to fit within button */
+    max-height: 70%; /* Auto size the image to fit within button */
+    object-fit: contain;
+    margin: auto;
+    transition: opacity 0.3s; /* Smooth transition for hover effect */
+    align-items: center;
 }
 
 .category-btn:hover {
     background-color: #201102; 
     color: #ffffff; 
+}
+
+.category-btn:hover img {
+    opacity: 1; /* Hide the original icon */
+}
+
+.category-btn::after {
+    content: '';
+    display: inline-block;
+    width: 30px; /* Adjust new icon size */
+    height: 30px; /* Adjust new icon size */
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0;
+    transition: opacity 0.3s; /* Smooth transition for hover effect */
+}
+
+.category-btn.helmets-btn::after {
+    background-image: url('icons/helmet.png');
+}
+
+.category-btn.bridles-btn::after {
+    background-image: url('icons/bridle.png');
+}
+
+.category-btn.tops-btn::after {
+    background-image: url('icons/top.png');
+}
+
+.category-btn.saddles-btn::after {
+    background-image: url('icons/saddle_hover.png');
+}
+
+.category-btn.gloves-btn::after {
+    background-image: url('icons/gloves_hover.png');
+}
+
+.category-btn.saddle-pads-btn::after {
+    background-image: url('icons/saddle_pad_hover.png');
+}
+
+.category-btn.pants-btn::after {
+    background-image: url('icons/pants_hover.png');
+}
+
+.category-btn.decorations-btn::after {
+    background-image: url('icons/decoration_hover.png');
+}
+
+.category-btn.shoes-btn::after {
+    background-image: url('icons/shoes_hover.png');
+}
+
+.category-btn.leg-wraps-btn::after {
+    background-image: url('icons/leg_wrap_hover.png');
+}
+
+.category-btn.hair-btn::after {
+    background-image: url('icons/hair_hover.png');
+}
+
+.category-btn.saddle-bags-btn::after {
+    background-image: url('icons/saddlebag_hover.png');
+}
+
+.category-btn.makeup-btn::after {
+    background-image: url('icons/makeup_hover.png');
+}
+
+.category-btn.pets-btn::after {
+    background-image: url('icons/pet_hover.png');
+}
+
+.category-btn.accessories-btn::after {
+    background-image: url('icons/accessory_hover.png');
+}
+
+.category-btn.horses-btn::after {
+    background-image: url('icons/horse_hover.png');
+}
+
+.category-btn:hover::after {
+    opacity: 1; /* Show the hover icon */
+}
+
+.category-btn span {
+    position: absolute;
+    bottom: 10px; /* Position text at the bottom */
+    width: 100%;
+    text-align: center;
 }
 
 main {
@@ -133,7 +228,7 @@ footer {
     padding: 1px;
     text-align: center;
     margin-top: auto;
-    position: relative;
+    position: fixed;
     right: 0;
     left: 0;
     bottom: 0;
