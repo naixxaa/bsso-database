@@ -1,0 +1,102 @@
+body {
+    height: 80vh;
+    margin: 0;
+    font-family: 'Fugaz One', sans-serif;
+    font-weight: 400;
+    background-color: #3b2c1f; 
+    color: #ffffff;
+    justify-content: center;
+    text-align: center;
+    font-size: 1.2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+    }
+}
+
+header {
+    background-color: #201102;
+    padding: 10px 7px;
+    font-family: 'Fugaz One', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    width: 100%; /* Stretch header to the sides */
+    
+}
+
+header a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+}
+
+header a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column; 
+        align-items: center;
+        padding: 15px;
+    }
+
+    header .menu {
+        flex-direction: column; 
+        gap: 10px;
+    }
+
+    header a {
+        font-size: 0.9em; 
+    }
+}
+
+.container {
+    margin: 5px auto;
+    max-width: 800px;
+    justify-content: center;
+    text-align: center; /* Center the container content */
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center; /* Center main content */
+    align-items: center;
+    flex-direction: column;
+}
+
+footer {
+    background: #201102;
+    color: #ffffff;
+    padding: 1px;
+    text-align: center;
+    margin-top: auto;
+    position: fixed;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 13px 0;
+    font-size: 1em;
+    font-family: 'Fugaz One', sans-serif;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
