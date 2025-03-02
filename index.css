@@ -225,14 +225,13 @@ main {
 footer {
     background: #201102;
     color: #ffffff;
-    padding: 1px;
+    padding: 10px;
     text-align: center;
-    margin-top: auto;
     position: fixed;
-    right: 0;
     left: 0;
     bottom: 0;
     width: 100%;
+    z-index: 100; /* Ensures it stays above other elements */
 }
 
 footer p {
