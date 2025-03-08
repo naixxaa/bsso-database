@@ -25,7 +25,7 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 1;
-    width: 100%; /* Stretch header to the sides */
+    width: 100%; 
     
 }
 
@@ -59,7 +59,7 @@ header a:hover {
 .container {
     margin: 5px auto;
     max-width: 800px;
-    text-align: center; /* Center the container content */
+    text-align: center; 
 }
 
 .logo {
@@ -80,13 +80,13 @@ h2 {
 
 .buttons-block {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); /* Change to 3 columns for better fit */
-    column-gap: 15px; /* Adjust gap for smaller buttons */
+    grid-template-columns: repeat(4, 1fr); 
+    column-gap: 15px; 
     row-gap: 20px; 
-    justify-content: center; /* Center the grid */
+    justify-content: center; 
     padding-left: 4rem;
     padding-right: 2rem;
-    margin: 0 auto; /* Center the buttons block */
+    margin: 0 auto; 
 }
 
 .category-btn {
@@ -94,28 +94,28 @@ h2 {
     color: #201102; 
     padding: 10px;
     border: 4px solid #201102; 
-    border-radius: 40px; /* Rounder buttons but not fully circular */
-    font-size: 0.8em; /* Slightly smaller font size */
+    border-radius: 40px; 
+    font-size: 0.8em; 
     font-weight: normal;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s; /* Transition for background and text color */
+    transition: background-color 0.3s, color 0.3s; 
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
-    width: 95px; /* Smaller fixed width for consistent size */
-    height: 95px; /* Smaller fixed height for consistent size */
+    width: 95px; 
+    height: 95px; 
     text-decoration: none;
     flex-direction: column;
     position: relative;
 }
 
 .category-btn img {
-    max-width: 70%; /* Auto size the image to fit within button */
-    max-height: 70%; /* Auto size the image to fit within button */
+    max-width: 70%; 
+    max-height: 70%; 
     object-fit: contain;
     margin: auto;
-    transition: opacity 0.3s; /* Smooth transition for hover effect */
+    transition: opacity 0.3s; 
     align-items: center;
 }
 
@@ -125,18 +125,18 @@ h2 {
 }
 
 .category-btn:hover img {
-    opacity: 1; /* Hide the original icon */
+    opacity: 1; 
 }
 
 .category-btn::after {
     content: '';
     display: inline-block;
-    width: 30px; /* Adjust new icon size */
-    height: 30px; /* Adjust new icon size */
+    width: 30px; 
+    height: 30px; 
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0;
-    transition: opacity 0.3s; /* Smooth transition for hover effect */
+    transition: opacity 0.3s; 
 }
 
 .category-btn.helmets-btn::after {
@@ -203,13 +203,9 @@ h2 {
     background-image: url('icons/horse_hover.png');
 }
 
-.category-btn:hover::after {
-    opacity: 1; /* Show the hover icon */
-}
-
 .category-btn span {
     position: absolute;
-    bottom: 10px; /* Position text at the bottom */
+    bottom: 10px; 
     width: 100%;
     text-align: center;
 }
@@ -217,7 +213,7 @@ h2 {
 main {
     flex: 1;
     display: flex;
-    justify-content: center; /* Center main content */
+    justify-content: center; 
     align-items: center;
     flex-direction: column;
 }
@@ -231,7 +227,7 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
-    z-index: 100; /* Ensures it stays above other elements */
+    z-index: 100; 
 }
 
 footer p {
