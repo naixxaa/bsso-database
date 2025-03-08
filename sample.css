@@ -127,8 +127,9 @@ header a:hover {
 
 .item-image {
     grid-column: 1 / 2;
-    width: 50%;
+    width: 30%; 
     height: auto;
+    margin: auto; 
     border-right: 3px solid #201102;
     align-items: center;
 }
