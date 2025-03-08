@@ -227,12 +227,8 @@ footer {
     color: #ffffff;
     padding: 10px;
     text-align: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
     width: 100%;
-    z-index: 100; 
-}
+  }
 
 footer p {
     margin: 13px 0;
