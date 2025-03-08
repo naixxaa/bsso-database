@@ -132,8 +132,11 @@ h2 {
     display: inline-block;
     width: 70%;
     height: 70%;
+    object-fit: contain;
+    margin: auto;
     background-size: contain;
     background-repeat: no-repeat;
+    align-items: center;
     opacity: 0;
     transition: opacity 0.3s;
     position: absolute;
@@ -141,12 +144,6 @@ h2 {
 
 .category-btn:hover::after {
     opacity: 1;
-    max-width: 70%;
-    max-height: 70%;
-    object-fit: contain;
-    margin: auto;
-    transition: opacity 0.3s;
-    align-items: center;
 }
 
 .category-btn.helmets-btn::after {
