@@ -99,7 +99,6 @@ header a:hover {
 
 .header-row p {
     border-right: 3px solid #000000; 
-    
 }
 
 .header-row p:last-child {
@@ -118,7 +117,9 @@ header a:hover {
 
 .item-card p {
     border-right: 3px solid #201102; 
-    
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
 }
 
 .item-card p:last-child {
@@ -127,7 +128,7 @@ header a:hover {
 
 .item-image {
     grid-column: 1 / 2;
-    width: 30%; 
+    width: 25%; 
     height: auto;
     margin: auto; 
     border-right: 3px solid #201102;
