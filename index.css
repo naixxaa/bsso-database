@@ -125,30 +125,34 @@ h2 {
 }
 
 .category-btn:hover img {
-    opacity: 1; 
+    opacity: 0; 
 }
 
 .category-btn::after {
     content: '';
     display: inline-block;
-    width: 30px; 
-    height: 30px; 
+    width: 70%; 
+    height: 70%; 
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0;
     transition: opacity 0.3s; 
 }
 
+.category-btn:hover::after {
+    opacity: 1; 
+}
+
 .category-btn.helmets-btn::after {
-    background-image: url('icons/helmet.png');
+    background-image: url('icons/helmet_hover.png');
 }
 
 .category-btn.bridles-btn::after {
-    background-image: url('icons/bridle.png');
+    background-image: url('icons/bridle_hover.png');
 }
 
 .category-btn.tops-btn::after {
-    background-image: url('icons/top.png');
+    background-image: url('icons/top_hover.png');
 }
 
 .category-btn.saddles-btn::after {
