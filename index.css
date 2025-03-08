@@ -123,10 +123,6 @@ h2 {
     color: #ffffff;
 }
 
-.category-btn:hover img {
-    opacity: 0;
-}
-
 .category-btn::after {
     content: '';
     display: inline-block;
