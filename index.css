@@ -2,7 +2,7 @@ body {
     height: 100%;
     margin: 0;
     font-family: 'Fugaz One', cursive;
-    background-color: #3b2c1f; 
+    background-color: #3b2c1f;
     color: #ffffff;
     text-align: center;
     font-size: 1rem;
@@ -25,8 +25,7 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 1;
-    width: 100%; 
-    
+    width: 100%;
 }
 
 header a {
@@ -41,29 +40,29 @@ header a:hover {
 
 @media (max-width: 768px) {
     header {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center;
         padding: 15px;
     }
 
     header .menu {
-        flex-direction: column; 
+        flex-direction: column;
         gap: 10px;
     }
 
     header a {
-        font-size: 0.9em; 
+        font-size: 0.9em;
     }
 }
 
 .container {
     margin: 5px auto;
     max-width: 800px;
-    text-align: center; 
+    text-align: center;
 }
 
 .logo {
-    width: 420px;  
+    width: 420px;
     height: auto;
 }
 
@@ -75,72 +74,73 @@ h1 {
 h2 {
     font-size: 18px;
     margin-bottom: 15px;
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
 }
 
 .buttons-block {
     display: grid;
-    grid-template-columns: repeat(4, 1fr); 
-    column-gap: 15px; 
-    row-gap: 20px; 
-    justify-content: center; 
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 15px;
+    row-gap: 20px;
+    justify-content: center;
     padding-left: 4rem;
     padding-right: 2rem;
-    margin: 0 auto; 
+    margin: 0 auto;
 }
 
 .category-btn {
-    background-color: #ffffff; 
-    color: #201102; 
+    background-color: #ffffff;
+    color: #201102;
     padding: 10px;
-    border: 4px solid #201102; 
-    border-radius: 40px; 
-    font-size: 0.8em; 
+    border: 4px solid #201102;
+    border-radius: 40px;
+    font-size: 0.8em;
     font-weight: normal;
     cursor: pointer;
-    transition: background-color 0.3s, color 0.3s; 
+    transition: background-color 0.3s, color 0.3s;
     display: flex;
     align-items: center;
     justify-content: center;
     gap: 5px;
-    width: 95px; 
-    height: 95px; 
+    width: 95px;
+    height: 95px;
     text-decoration: none;
     flex-direction: column;
     position: relative;
 }
 
 .category-btn img {
-    max-width: 70%; 
-    max-height: 70%; 
+    max-width: 70%;
+    max-height: 70%;
     object-fit: contain;
     margin: auto;
-    transition: opacity 0.3s; 
+    transition: opacity 0.3s;
     align-items: center;
 }
 
 .category-btn:hover {
-    background-color: #201102; 
-    color: #ffffff; 
+    background-color: #201102;
+    color: #ffffff;
 }
 
 .category-btn:hover img {
-    opacity: 0; 
+    opacity: 0;
 }
 
 .category-btn::after {
     content: '';
     display: inline-block;
-    width: 70%; 
-    height: 70%; 
+    width: 70%;
+    height: 70%;
     background-size: contain;
     background-repeat: no-repeat;
     opacity: 0;
-    transition: opacity 0.3s; 
+    transition: opacity 0.3s;
+    position: absolute;
 }
 
 .category-btn:hover::after {
-    opacity: 1; 
+    opacity: 1;
 }
 
 .category-btn.helmets-btn::after {
@@ -209,7 +209,7 @@ h2 {
 
 .category-btn span {
     position: absolute;
-    bottom: 10px; 
+    bottom: 10px;
     width: 100%;
     text-align: center;
 }
@@ -217,7 +217,7 @@ h2 {
 main {
     flex: 1;
     display: flex;
-    justify-content: center; 
+    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
@@ -227,13 +227,13 @@ footer {
     color: #ffffff;
     padding: 10px;
     text-align: center;
-    width: 100%; 
+    width: 100%;
 }
 
 footer p {
     margin: 13px 0;
     font-size: 1em;
-    font-family: 'Poppins', sans-serif; 
+    font-family: 'Poppins', sans-serif;
 }
 
 footer a {
